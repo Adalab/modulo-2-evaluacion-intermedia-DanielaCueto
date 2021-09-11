@@ -11,15 +11,19 @@
   <body>
     <main class="container">
       <h1>Adivina el número</h1>
-      <label for="textbox" class="label">Introduce tu número aquí:</label>
-      <input
-        type="number"
-        name="boxNumber"
-        id="boxNumber"
-        class="boxNumber js-boxNumber"
-        placeholder="El número debe estar entre 1 y 100"
-      />
+
+      <form action="">
+        <label for="textbox" class="label">Introduce tu número aquí:</label>
+        <input
+          type="number"
+          name="boxNumber"
+          id="boxNumber"
+          class="boxNumber js-boxNumber"
+          placeholder="El número debe estar entre 1 y 100"
+        />
+      </form>
       <button class="button js-button">Prueba</button>
+
       <p class="paragraph js-hint">Pista: Escribe el número y dale a Prueba</p>
       <p class="paragraph">
         Número de intentos:<span class="js-attempts">0</span>
