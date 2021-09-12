@@ -18,7 +18,10 @@ function handleAttempt(ev) {
 }
 function giveFeedBack() {
   const guessValue = parseInt(boxNumber.value);
-  if (guessValue < 1 || guessValue > 100) {
+
+  if (isNaN(guessValue)) {
+    hintText.innerHTML = "Tienes que introducir un número";
+  } else if (guessValue < 1 || guessValue > 100) {
     hintText.innerHTML = "El número es inválido";
   } else if (guessValue === randomNumber) {
     hintText.innerHTML = "¡¡Has ganado campeona!!";
